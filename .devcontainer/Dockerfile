@@ -34,7 +34,7 @@ RUN echo 'source /opt/ros/'$ROS_DISTRO'/setup.bash' >> /home/$USERNAME/.bashrc \
 ENV JULIA_CONDAPKG_BACKEND="Null"
 
 # Install JuliaCall for Julia-Python integration. Import JuliaCall once to
-# trigger installation Julia and required Julia packages. Then install common Julia
+# trigger installation of Julia and required Julia packages. Then install common Julia
 # packages to the Julia environment.
 # See: https://juliapy.github.io/PythonCall.jl/stable/juliacall/
 RUN pip install --no-cache-dir juliacall \
